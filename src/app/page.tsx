@@ -17,10 +17,11 @@ import { getVideos } from '@/lib/get-videos';
 export default async function Home() {
   const homeInfo = await getHomeInfo();
   // const categories = await getCategories();
-  const images = await getBrands();
+  const brandsImages = await getBrands();
   const testimonials = await getTestimonials();
   const services = await getServices();
   const imagenes = await getImages();
+
   const videos = await getVideos();
 
   return (
@@ -28,7 +29,7 @@ export default async function Home() {
       <Background />
       <Navigation />
       <Hero homeInfo={homeInfo} />
-      <Brands images={images} />
+      <Brands images={brandsImages} />
       <Imagenes images={imagenes} />
       <Videos videos={videos} />
       <Testimonials testimonials={testimonials} />
