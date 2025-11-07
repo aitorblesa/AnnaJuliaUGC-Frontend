@@ -1,0 +1,7 @@
+<svg width="0" height="0" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="blob" clipPathUnits="objectBoundingBox">
+      <path d="M0.28,0.94 C0.59,0.92,0.71,0.77,0.76,0.71 C0.86,0.60,0.99,0.30,0.61,0.09 C0.23,-0.13,0.06,0.10,0.03,0.24 C-0.03,0.50,-0.03,0.96,0.28,0.94 Z" />
+    </clipPath>
+  </defs>
+</svg>

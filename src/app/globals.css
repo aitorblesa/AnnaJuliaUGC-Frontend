@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@layer utilities {
+
+  .shadow-custom {
+    box-shadow: 0 57px 123px rgba(21, 21, 21, 0.15);
+  }
+  .shadow-quotes {
+    box-shadow: 0 15px 30px currentColor;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+.row-title,
+.row-letter {
+  font-size: clamp(5rem, calc(10vw + 1rem), 12rem);
+  font-weight: 500;
+  position: relative;
+  letter-spacing: -0.2rem;
+  display: inline-block;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+@layer utilities {
+  .rounded-blob {
+    border-radius: 27% 73% 70% 30% / 44% 30% 70% 56%;
+  }
+}

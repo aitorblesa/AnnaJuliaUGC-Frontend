@@ -1,0 +1,30 @@
+header {
+  animation: nav-show 1s ease-out both;
+  animation-timeline: scroll();
+  animation-range: 0 250px;
+
+  & > div,
+  & > nav > ul > li > a {
+    animation: text-change 1s ease-out both;
+    animation-timeline: scroll();
+    animation-range: 0 15px;
+  }
+}
+@keyframes nav-show {
+  from {
+    background-color: transparent;
+    opacity: 1;
+  }
+  to {
+    backdrop-filter: blur(10px);
+    webkit-backdrop-filter: blur(10px);
+    background-color: color-mix(in oklab, #F1EEE4 50%, transparent);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  header {
+    transition: none;
+  }
+}
