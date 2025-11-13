@@ -6,7 +6,7 @@ export const Brands = ({ images }: BrandsGalleryProps) => {
   const duplicatedImages = [...images, ...images];
 
   return (
-    <section className="py-8 border">
+    <section className="py-8">
       <h1 className="mt-24 text-center text-4xl font-semibold uppercase md:text-6xl">
         {title}
       </h1>

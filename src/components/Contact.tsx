@@ -2,7 +2,7 @@ export const Contact = () => {
   return (
     <section
       id="contacto"
-      className="relative flex flex-col gap-16 px-8 pb-32 md:h-[calc(100dvh-250px)] lg:h-[calc(100dvh-88px)] lg:justify-between lg:px-32"
+      className="relative flex flex-col gap-16 px-8 pb-32 lg:h-[calc(100dvh-88px)] lg:justify-between lg:px-32"
     >
       <img
         className="absolute left-0 top-0 -z-30 h-full w-full object-cover"
