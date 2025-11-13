@@ -1,12 +1,12 @@
-import { BrandsImagesProps } from '@/interfaces/images';
+import { BrandsGalleryProps } from '@/interfaces/gallery';
 import '@/components/brands.css';
 
-export const Brands = ({ images }: BrandsImagesProps) => {
+export const Brands = ({ images }: BrandsGalleryProps) => {
   const title = 'Confían en mi';
   const duplicatedImages = [...images, ...images];
 
   return (
-    <section className="pt-24">
+    <section className="py-8 border">
       <h1 className="mt-24 text-center text-4xl font-semibold uppercase md:text-6xl">
         {title}
       </h1>

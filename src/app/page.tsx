@@ -5,7 +5,7 @@ import { Hero } from '@/components/Hero';
 import { Brands } from '@/components/Brands';
 import { Testimonials } from '@/components/Testimonials';
 import { Services } from '@/components/Services';
-import { Imagenes } from '@/components/Imagenes';
+import { Imagenes } from '@/components/Gallery';
 import { Videos } from '@/components/Videos';
 // import { getCategories } from '@/lib/get-categories';
 import { getHomeInfo } from '@/lib/get-home-info';

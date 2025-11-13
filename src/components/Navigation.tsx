@@ -54,14 +54,14 @@ export const Navigation = () => {
   return (
     <header
       id="landing-header"
-      className="sticky top-0 z-50 flex w-full flex-col items-center justify-between px-32 py-5 font-semibold tracking-wide md:flex-row"
+      className="sticky top-0 z-50 flex w-full items-center justify-between px-8 lg:px-32 py-5 font-semibold tracking-wide flex-row"
     >
       <div className="flex py-2 text-2xl *:inline-block">
         Anna
         <span className="text-2xl text-pink-400">.</span>
       </div>
       <nav>
-        <ul className="lg:flex [&>li>a]:inline-block [&>li>a]:px-2 [&>li>a]:py-2">
+        <ul className="lg:flex [&>li>a]:inline-block [&>li>a]:px-2 [&>li>a]:py-2 hidden">
           <li>
             <a href="#galeria">Galeria</a>
           </li>
@@ -69,10 +69,10 @@ export const Navigation = () => {
             <a href="#videos">Videos</a>
           </li>
           <li>
-            <a href="#servicios">Servicios</a>
+            <a href="#testimonios">Testimonios</a>
           </li>
           <li>
-            <a href="#testimonios">Testimonios</a>
+            <a href="#servicios">Servicios</a>
           </li>
         </ul>
       </nav>

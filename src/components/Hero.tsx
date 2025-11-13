@@ -33,13 +33,13 @@ export const Hero = ({ homeInfo }: HeroProps) => {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.volume = 0.1; // volumen entre 0.0 (mute) y 1.0 (máximo)
+      videoRef.current.volume = 0.1;
     }
   }, []);
 
   return (
-    <section className="relative mx-auto flex max-w-[1440px] flex-col justify-center gap-12 md:mt-0 lg:gap-0">
-      <div className="banner mx-auto flex w-full max-w-[1400px] grow flex-col">
+    <section className="relative mx-auto flex max-w-[1440px] flex-col justify-center gap-12 px-4 md:px-8">
+      <div className="flex w-full flex-col">
         <BannerRow title={encabezado_1} />
         <BannerRow title={encabezado_2} delay={1} className="sm:self-center" />
         <BannerRow title={encabezado_3} delay={2} className="sm:self-end" />
@@ -65,14 +65,13 @@ export const Hero = ({ homeInfo }: HeroProps) => {
           duration: 1,
           delay: 1.4,
         }}
-        className="aspect-video w-full max-w-[840px] self-center"
       >
         <video
           ref={videoRef}
           controls
           controlsList="nodownload"
           preload="metadata"
-          className="aspect-video h-auto w-full max-w-4xl rounded-lg shadow-2xl"
+          className="aspect-video h-auto rounded-lg shadow-2xl md:mx-auto md:w-4/5"
         >
           <source src={video} type="video/mp4" />
         </video>
@@ -91,7 +90,9 @@ const BannerRow = ({
   delay?: number;
 }) => {
   return (
-    <div className={`banner-row ${className ? `${className}` : ''}`}>
+    <div
+      className={`banner-row overflow-hidden ${className ? `${className}` : ''}`}
+    >
       <AnimatedLetters title={title} delayNumber={delay} />
     </div>
   );

@@ -2,7 +2,7 @@ export const Contact = () => {
   return (
     <section
       id="contacto"
-      className="relative flex h-[calc(100dvh-88px)] flex-col justify-between gap-6 px-32 pb-16"
+      className="relative flex flex-col gap-16 px-8 pb-32 md:h-[calc(100dvh-250px)] lg:h-[calc(100dvh-88px)] lg:justify-between lg:px-32"
     >
       <img
         className="absolute left-0 top-0 -z-30 h-full w-full object-cover"
@@ -10,7 +10,7 @@ export const Contact = () => {
         alt="Imagen de fondo del contacto"
       />
       <h1 className="mt-12 text-6xl font-semibold md:text-9xl">Hablemos</h1>
-      <ul className="flex gap-8">
+      <ul className="flex gap-8 [&>li>a>img]:w-8 lg:[&>li>a>img]:w-12">
         <li>
           <a
             href="https://www.instagram.com/creadora.anna/ "
@@ -35,7 +35,7 @@ export const Contact = () => {
           </a>
         </li>
       </ul>
-      <div className="max-w-[320px] bg-white p-6 pb-12 text-3xl uppercase lg:top-52 xl:absolute xl:right-80">
+      <div className="max-w-[320px] bg-white p-6 pb-12 text-3xl uppercase lg:absolute lg:right-80 lg:top-52">
         <img
           className="aspect-square w-full"
           src="/anna_contact.webp"

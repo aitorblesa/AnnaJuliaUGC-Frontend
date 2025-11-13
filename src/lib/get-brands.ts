@@ -1,4 +1,4 @@
-import { Images } from '@/interfaces/images';
+import { Images } from '@/interfaces/gallery';
 import { query } from './strapi';
 
 export function getBrands() {
