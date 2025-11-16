@@ -54,14 +54,16 @@ export const Navigation = () => {
   return (
     <header
       id="landing-header"
-      className="sticky top-0 z-50 flex w-full items-center justify-between px-8 lg:px-32 py-5 font-semibold tracking-wide flex-row"
+      className="sticky top-0 z-50 flex w-full flex-row items-center justify-between px-8 py-5 font-semibold tracking-wide"
     >
       <div className="flex py-2 text-2xl *:inline-block">
-        Anna
-        <span className="text-2xl text-pink-400">.</span>
+        <a href="#">
+          Anna
+          <span className="text-2xl text-pink-400">.</span>
+        </a>
       </div>
       <nav>
-        <ul className="lg:flex [&>li>a]:inline-block [&>li>a]:px-2 [&>li>a]:py-2 hidden">
+        <ul className="hidden lg:flex [&>li>a]:inline-block [&>li>a]:px-2 [&>li>a]:py-2">
           <li>
             <a href="#galeria">Galeria</a>
           </li>
@@ -78,7 +80,7 @@ export const Navigation = () => {
       </nav>
       <div
         id="menu-backdrop"
-        className="h-(--height) w-(--width) translate-x-(--left) absolute left-0 -z-10 rounded bg-[#6874E8]/10 opacity-0 backdrop-blur-lg transition-all duration-300 ease-in-out"
+        className="h-(--height) w-(--width) translate-x-(--left) absolute left-0 -z-10 rounded bg-[#6874E8]/30 opacity-0 backdrop-blur-lg transition-all duration-300 ease-in-out"
       ></div>
       <div className="flex justify-end py-2">
         <a

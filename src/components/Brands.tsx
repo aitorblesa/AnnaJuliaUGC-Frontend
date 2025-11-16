@@ -6,8 +6,8 @@ export const Brands = ({ images }: BrandsGalleryProps) => {
   const duplicatedImages = [...images, ...images];
 
   return (
-    <section className="py-8">
-      <h1 className="mt-24 text-center text-4xl font-semibold uppercase md:text-6xl">
+    <section className="mx-auto max-w-[1440px] py-8">
+      <h1 className="mx-auto mt-24 max-w-[1440px] text-center text-4xl font-semibold uppercase md:text-6xl">
         {title}
       </h1>
       <div className="relative overflow-hidden py-24">

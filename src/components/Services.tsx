@@ -7,7 +7,7 @@ export const Services = ({ services }: ServicesProps) => {
       <h1 className="text-center text-4xl font-semibold uppercase md:text-6xl">
         Servicios
       </h1>
-      <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-16 py-24 lg:flex-row relative">
+      <div className="relative mx-auto flex w-full max-w-[1440px] flex-col items-center justify-between gap-16 py-24 lg:flex-row">
         <ul className="flex w-full flex-col gap-8">
           {services.map((service) => {
             return (
@@ -31,7 +31,7 @@ export const Services = ({ services }: ServicesProps) => {
         <img
           src="/anna_2.webp"
           alt="Imagen orgánica con halo azul"
-          className="rounded-blob aspect-square h-[500px] object-cover hidden md:absolute md:block lg:relative lg:top-0 top-52 -right-30 -z-10 opacity-30 lg:opacity-100"
+          className="rounded-blob -right-30 top-52 -z-10 hidden aspect-square h-[500px] object-cover opacity-30 md:absolute md:block lg:relative lg:top-0 lg:opacity-100"
         />
       </div>
     </section>
