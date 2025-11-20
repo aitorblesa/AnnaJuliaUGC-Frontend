@@ -5,7 +5,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { GalleryProps } from '@/interfaces/gallery';
 
-export const Imagenes = ({ images }: GalleryProps) => {
+export const Gallery = ({ images }: GalleryProps) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true });
 
@@ -14,7 +14,7 @@ export const Imagenes = ({ images }: GalleryProps) => {
   }, [inView, controls]);
 
   return (
-    <section id="galeria" className="px-4 py-8 md:px-16 ">
+    <section id="galeria" className="px-4 py-8 md:px-8">
       <h1 className="text-center text-3xl font-semibold uppercase md:text-6xl">
         Explora los distintos
         <br />

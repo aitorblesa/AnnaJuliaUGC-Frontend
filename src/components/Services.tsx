@@ -3,7 +3,7 @@ import React from 'react';
 //1203
 export const Services = ({ services }: ServicesProps) => {
   return (
-    <section id="servicios" className="px-8 py-24 md:px-16">
+    <section id="servicios" className="overflow-hidden px-8 py-24">
       <h1 className="text-center text-4xl font-semibold uppercase md:text-6xl">
         Servicios
       </h1>
@@ -30,7 +30,7 @@ export const Services = ({ services }: ServicesProps) => {
         </ul>
         <img
           src="/anna_2.webp"
-          alt="Imagen orgánica con halo azul"
+          alt="Imagen orgánica"
           className="rounded-blob -right-30 top-52 -z-10 hidden aspect-square h-[500px] object-cover opacity-30 md:absolute md:block lg:relative lg:top-0 lg:opacity-100"
         />
       </div>

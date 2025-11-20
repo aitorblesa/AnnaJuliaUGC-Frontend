@@ -5,7 +5,7 @@ import { Hero } from '@/components/Hero';
 import { Brands } from '@/components/Brands';
 import { Testimonials } from '@/components/Testimonials';
 import { Services } from '@/components/Services';
-import { Imagenes } from '@/components/Gallery';
+import { Gallery } from '@/components/Gallery';
 import { Videos } from '@/components/Videos';
 // import { getCategories } from '@/lib/get-categories';
 import { getHomeInfo } from '@/lib/get-home-info';
@@ -30,7 +30,7 @@ export default async function Home() {
       <Navigation />
       <Hero homeInfo={homeInfo} />
       <Brands images={brandsImages} />
-      <Imagenes images={imagenes} />
+      <Gallery images={imagenes} />
       <Videos videos={videos} />
       <Testimonials testimonials={testimonials} />
       <Services services={services} />

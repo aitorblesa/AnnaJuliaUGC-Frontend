@@ -2,14 +2,14 @@ export const Contact = () => {
   return (
     <section
       id="contacto"
-      className="relative gap-16 px-8 pb-32 lg:h-[calc(100dvh-88px)]"
+      className="relative h-[calc(100dvh-89px)] gap-16 px-8"
     >
       <img
         className="absolute left-0 top-0 -z-30 h-full w-full object-cover"
         src="/contact_bg.jpg"
         alt="Imagen de fondo del contacto"
       />
-      <footer className="relative mx-auto flex max-w-[1440px] flex-col gap-16 px-8 pb-32 lg:h-[calc(100dvh-88px)] lg:justify-between">
+      <footer className="relative mx-auto flex max-w-[1440px] flex-col gap-16">
         <div className="flex w-full flex-col gap-8">
           <h1 className="mt-12 text-6xl font-semibold md:text-9xl">Hablemos</h1>
           <a
@@ -44,7 +44,7 @@ export const Contact = () => {
             </a>
           </li>
         </ul>
-        <div className="max-w-[320px] bg-white p-6 pb-12 text-3xl uppercase lg:absolute lg:right-0 lg:top-52">
+        <div className="max-w-[320px] bg-white p-6 text-3xl uppercase lg:absolute lg:right-0 lg:top-52">
           <img
             className="aspect-square w-full"
             src="/anna_contact.webp"

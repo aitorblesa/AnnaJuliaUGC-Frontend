@@ -80,7 +80,7 @@ export const Videos = ({ videos }: VideosProps) => {
       <div className="mx-auto mt-4 max-w-6xl">
         <motion.div
           layout
-          className="mx-auto flex flex-wrap justify-center gap-4 md:justify-start md:gap-8"
+          className="mx-auto flex flex-wrap justify-start gap-4 md:gap-8"
         >
           <AnimatePresence mode="popLayout" initial={false}>
             {filteredVideos.length > 0 &&

@@ -17,14 +17,14 @@ export const Testimonials = ({ testimonials }: TestimonialsProps) => {
   ];
 
   return (
-    <section className="mx-auto px-4 pt-8" id="testimonios">
+    <section className="mx-auto pt-8" id="testimonios">
       <h2 className="text-center text-2xl font-semibold uppercase md:text-6xl">
         Testimonios
       </h2>
       <h1 className="mt-6 text-center text-2xl font-semibold uppercase md:mt-12 md:text-4xl">
         Que piensan mis clientes
       </h1>
-      <section className="mx-auto flex max-w-6xl flex-col items-center gap-16 pt-12 md:justify-between md:pt-16 lg:flex-row lg:items-stretch">
+      <section className="mx-auto flex px-4 md:px-0 max-w-[1440px] flex-col items-center gap-16 pt-12 md:justify-between md:pt-16 lg:flex-row lg:items-stretch">
         {testimonials.map((testimonial, index) => {
           const { background, shadow } =
             colorConfigs[index % colorConfigs.length];
